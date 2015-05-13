@@ -25,9 +25,9 @@ To download the cnx development VM from atlas.hashicorp.com:
 
 4. Edit your ``/etc/hosts`` file to include this line::
 
-    10.11.12.13        dev-vm.cnx.org
+    10.11.12.13        cnx-dev-vm.org
 
-5. Go to http://dev-vm.cnx.org:8000/ for the cnx site.
+5. Go to http://cnx-dev-vm.org:8000/ for the cnx site.
 
 TAKE SNAPSHOTS
 --------------
@@ -81,15 +81,15 @@ the services.  For example, if you are a frontend developer, you may have
 webview installed locally and use archive, authoring, publishing and accounts
 from the VM so you don't have to set them up.
 
-Webview is running at http://dev-vm.cnx.org:8000/
+Webview is running at http://cnx-dev-vm.org:8000/
 
-Archive is running at http://dev-vm.cnx.org:6543/
+Archive is running at http://cnx-dev-vm.org:6543/
 
-Authoring is running at http://dev-vm.cnx.org:8080/
+Authoring is running at http://cnx-dev-vm.org:8080/
 
-Publishing is running at http://dev-vm.cnx.org:6544/
+Publishing is running at http://cnx-dev-vm.org:6544/
 
-Accounts is running at https://dev-vm.cnx.org:3000/.  There is already an admin
+Accounts is running at https://cnx-dev-vm.org:3000/.  There is already an admin
 user added with username ``admin`` and password ``password``.
 
 CREATE A VM FROM VAGRANTFILE
@@ -108,9 +108,9 @@ VM yourself:
 
 5. Edit your ``/etc/hosts`` file to include this line::
 
-    10.11.12.13        dev-vm.cnx.org
+    10.11.12.13        cnx-dev-vm.org
 
-6. Go to http://dev-vm.cnx.org:8000/ for the cnx site.
+6. Go to http://cnx-dev-vm.org:8000/ for the cnx site.
 
 PACKAGE THE VM
 --------------
@@ -124,7 +124,7 @@ machine, it's in ``~/VirtualBox VMs``)
 4. ``vagrant box list`` should show ``karenc/cnx-dev-vm``
 5. In another directory, try downloading the VM: ``vagrant init karenc/cnx-dev-vm``
 6. ``vagrant up``
-7. Go to http://dev-vm.cnx.org:8000/ for the cnx site.
+7. Go to http://cnx-dev-vm.org:8000/ for the cnx site.
 8. Follow this guide to upload the box to atlas.hashicorp.com:
    https://vagrantcloud.com/docs/providers (look for ``UPLOAD A .BOX FOR PROVIDER``)
 9. Delete the local box: ``vagrant box remove karenc/cnx-dev-vm``

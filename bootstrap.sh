@@ -2,10 +2,10 @@
 
 # static ip is 10.11.12.13
 # we need to setup a fake domain name so google oauth works
-ipaddr='dev-vm.cnx.org'
+ipaddr='cnx-dev-vm.org'
 
 # Add fake domain name to /etc/hosts
-sudo sed -i 's/^127.0.0.1 .*/& dev-vm.cnx.org/' /etc/hosts
+sudo sed -i 's/^127.0.0.1 .*/& cnx-dev-vm.org/' /etc/hosts
 
 # Install general packages
 sudo apt-get update
